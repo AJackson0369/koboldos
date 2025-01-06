@@ -23,6 +23,8 @@ modules:
     install:
       - micro
       - starship
+      - neofetch
+      - git
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -34,8 +36,13 @@ modules:
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
-        - org.mozilla.firefox
+        - com.brave.Browser
+        - com.spotify.Client
+        - us.zoom.Zoom
+        - com.slack.Slack
         - org.gnome.Loupe
+        - https://downloads.1password.com/linux/flatpak/1Password.flatpakref
+        
       remove:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
